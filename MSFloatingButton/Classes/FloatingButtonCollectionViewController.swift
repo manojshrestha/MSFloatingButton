@@ -185,8 +185,8 @@ public class FloatingButtonCollectionViewController: UIViewController, MSFloatin
         for buttonIndex in 0..<buttonCount
         {
             
-            let rAngle  = ((2 * CGFloat(M_PI) ) / CGFloat(buttonCount))
-            let bAngle : CGFloat = (CGFloat(buttonIndex)  * rAngle) - CGFloat(M_PI)/2 //subtract part to rotate 90 deg
+            let rAngle  = ((2 * CGFloat(Double.pi) ) / CGFloat(buttonCount))
+            let bAngle : CGFloat = (CGFloat(buttonIndex)  * rAngle) - CGFloat(Double.pi)/2 //subtract part to rotate 90 deg
             let  newx = centerPoint.x + floatingButtonsCollectionRadius * cos(bAngle)
             let  newy = centerPoint.y + floatingButtonsCollectionRadius * sin(bAngle)
             
