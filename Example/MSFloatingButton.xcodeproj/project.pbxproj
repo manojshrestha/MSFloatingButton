@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4282FB1B1FB332750028DC5D /* MSFloatingBtnWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282FB181FB332750028DC5D /* MSFloatingBtnWithLabel.swift */; };
+		4282FB1C1FB332750028DC5D /* FloatingButtonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282FB191FB332750028DC5D /* FloatingButtonCollectionViewController.swift */; };
+		4282FB1D1FB332750028DC5D /* MSFloatingBtnWithLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4282FB1A1FB332750028DC5D /* MSFloatingBtnWithLabel.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,7 +32,10 @@
 
 /* Begin PBXFileReference section */
 		208D38644078CC06481DE0BE /* Pods_MSFloatingButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSFloatingButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CB8AA69867C05A9DCB0730 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		21CB8AA69867C05A9DCB0730 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4282FB181FB332750028DC5D /* MSFloatingBtnWithLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSFloatingBtnWithLabel.swift; path = ../../MSFloatingButton/Classes/MSFloatingBtnWithLabel.swift; sourceTree = "<group>"; };
+		4282FB191FB332750028DC5D /* FloatingButtonCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingButtonCollectionViewController.swift; path = ../../MSFloatingButton/Classes/FloatingButtonCollectionViewController.swift; sourceTree = "<group>"; };
+		4282FB1A1FB332750028DC5D /* MSFloatingBtnWithLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MSFloatingBtnWithLabel.xib; path = ../../MSFloatingButton/Classes/MSFloatingBtnWithLabel.xib; sourceTree = "<group>"; };
 		49308A43FA3F95011042F3A1 /* Pods-MSFloatingButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFloatingButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSFloatingButton_Tests/Pods-MSFloatingButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		59DAF6CF9413957B5415587B /* Pods-MSFloatingButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFloatingButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSFloatingButton_Tests/Pods-MSFloatingButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MSFloatingButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSFloatingButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,9 +48,9 @@
 		607FACE51AFB9204008FA782 /* MSFloatingButton_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSFloatingButton_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		77F8B9E3C47E36D974E6DE5B /* MSFloatingButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MSFloatingButton.podspec; path = ../MSFloatingButton.podspec; sourceTree = "<group>"; };
+		77F8B9E3C47E36D974E6DE5B /* MSFloatingButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSFloatingButton.podspec; path = ../MSFloatingButton.podspec; sourceTree = "<group>"; };
 		8B53C21E0EFBD6BF90FC04EF /* Pods-MSFloatingButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFloatingButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSFloatingButton_Example/Pods-MSFloatingButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9123D2194AC9F577DB89340D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9123D2194AC9F577DB89340D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9AE446A27DBB9D751C7E2414 /* Pods-MSFloatingButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFloatingButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSFloatingButton_Example/Pods-MSFloatingButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D4222C1747098C15EC92A448 /* Pods_MSFloatingButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSFloatingButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +75,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4282FB171FB3325F0028DC5D /* MSFloatingButton */ = {
+			isa = PBXGroup;
+			children = (
+				4282FB191FB332750028DC5D /* FloatingButtonCollectionViewController.swift */,
+				4282FB181FB332750028DC5D /* MSFloatingBtnWithLabel.swift */,
+				4282FB1A1FB332750028DC5D /* MSFloatingBtnWithLabel.xib */,
+			);
+			name = MSFloatingButton;
+			sourceTree = "<group>";
+		};
 		5845A9D4C0662CC3A690AD56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +120,7 @@
 		607FACD21AFB9204008FA782 /* Example for MSFloatingButton */ = {
 			isa = PBXGroup;
 			children = (
+				4282FB171FB3325F0028DC5D /* MSFloatingButton */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -251,6 +268,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				4282FB1D1FB332750028DC5D /* MSFloatingBtnWithLabel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				4282FB1B1FB332750028DC5D /* MSFloatingBtnWithLabel.swift in Sources */,
+				4282FB1C1FB332750028DC5D /* FloatingButtonCollectionViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
