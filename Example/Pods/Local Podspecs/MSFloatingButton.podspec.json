@@ -1,0 +1,22 @@
+{
+  "name": "MSFloatingButton",
+  "version": "0.1.0",
+  "summary": "A short description of MSFloatingButton.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/manojshrestha/MSFloatingButton",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "manojshrestha": "iam.manojshrestha@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/manojshrestha/MSFloatingButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MSFloatingButton/Classes/**/*"
+}

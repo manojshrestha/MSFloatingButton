@@ -1,0 +1,16 @@
+PODS:
+  - MSFloatingButton (0.1.0)
+
+DEPENDENCIES:
+  - MSFloatingButton (from `../`)
+
+EXTERNAL SOURCES:
+  MSFloatingButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MSFloatingButton: 6536b953242045805a1d0bd43f7e63c536e5d68b
+
+PODFILE CHECKSUM: 103efe86d2df442445c82a5a41c42722b177bf95
+
+COCOAPODS: 1.2.1
