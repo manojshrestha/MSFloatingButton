@@ -25,7 +25,7 @@ pod 'MSFloatingButton'
 
 ## Author
 
-manojshrestha, iam.manojshrestha@gmail.com
+Manoj Shrestha
 
 ## License
 
