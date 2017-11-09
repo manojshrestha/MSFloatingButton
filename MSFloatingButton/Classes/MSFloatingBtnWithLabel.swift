@@ -23,7 +23,7 @@ public class MSFloatingBtnWithLabel: UIView {
     
     var delegate : MSFloatingBtnWithLabelDelegate?
     
-    internal var handler: ((MSFloatingBtnWithLabel) -> Void)? = nil
+    public var handler: ((MSFloatingBtnWithLabel) -> Void)? = nil
     
     @IBInspectable
     public var icon : UIImage!
