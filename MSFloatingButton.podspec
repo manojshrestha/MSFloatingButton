@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSFloatingButton'
-  s.version          = '0.1.3'
+  s.version          = '0.1.2'
   s.summary          = 'Tumblr like floating button for iOS Projects.'
 
 # This description is used to generate tags and improve search results.
