@@ -7,8 +7,6 @@
 
 ## GIF
 ![alt text](https://github.com/manojshrestha/MSFloatingButton/blob/master/MSDemo.gif)
-<img src="https://github.com/manojshrestha/MSFloatingButton/blob/master/MSDemo.gif" alt="Demo">
-
 
 ## Example
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
