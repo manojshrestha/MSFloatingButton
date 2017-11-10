@@ -13,6 +13,7 @@ class ViewController: UIViewController{
     @IBOutlet weak var btnAdd: UIButton!
     //let transition = PopAnimator()
 
+    @IBOutlet weak var logo: UIImageView!
     
     let btnDictionary = [["title":"GIF","icon":"icoGif","backgroundColor":UIColor(red: 246.0/255.0, green: 219.0/255.0, blue: 74.0/255.0, alpha: 1.0)],
                          ["title":"Link","icon":"icoLink","backgroundColor":UIColor(red: 90.0/255.0, green: 187.0/255.0, blue: 139.0/255.0, alpha: 1.0)],
@@ -22,13 +23,20 @@ class ViewController: UIViewController{
                          ["title":"Text","icon":"icoText","backgroundColor":UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)],
                          ["title":"Photo","icon":"icoPhoto","backgroundColor":UIColor(red: 215.0/255.0, green: 95.0/255.0, blue: 69.0/255.0, alpha: 1.0)]]
     
+    let bgColor = UIColor(red: 54.0/255.0, green: 70.0/255.0, blue: 93.0/255.0, alpha: 1.0)
+    let yellowColor = UIColor(red: 211.0/255.0, green: 191.0/255.0, blue: 129.0/255.0, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.btnAdd.layer.cornerRadius = self.btnAdd.frame.height/2
-        let bgColor = UIColor(red: 240.0/255.0, green: 152.0/255.0, blue: 60.0/255.0, alpha: 1.0)
-        self.btnAdd.backgroundColor = bgColor
         
+        self.btnAdd.layer.cornerRadius = self.btnAdd.frame.height/2
+        self.btnAdd.backgroundColor = bgColor
+        self.btnAdd.layer.shadowColor = UIColor.gray.cgColor
+        self.btnAdd.layer.shadowRadius = 2
+        self.btnAdd.layer.shadowOpacity = 3
+        self.btnAdd.layer.shadowOffset = CGSize(width: 3, height: 3)
+
+        self.logo.tintColor = bgColor
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -45,9 +53,9 @@ class ViewController: UIViewController{
         for i in 0...(btnDictionary.count - 1) {
             let fbtn = MSFloatingBtnWithLabel()
             fbtn.floatingButtonColor = btnDictionary[i]["backgroundColor"] as! UIColor
-            fbtn.titleColor = UIColor.black
+            fbtn.titleColor = yellowColor
             fbtn.title = btnDictionary[i]["title"] as! String
-            fbtn.titleColor = UIColor.white
+            //fbtn.titleColor = UIColor.white
             fbtn.handler = {fbtn in print("clicked \(fbtn.title)")}
             fbtn.icon = UIImage(named: btnDictionary[i]["icon"] as! String)
             floatingCollectionVC.addFloatingButton(fbtn)
@@ -56,15 +64,8 @@ class ViewController: UIViewController{
         floatingCollectionVC.transitionButton = self.btnAdd
         present(floatingCollectionVC, animated: true, completion: nil)
     }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            print("Landscape")
-        } else {
-            print("Portrait")
-        }
-    }}
 
+}
 
 
 

@@ -22,45 +22,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u11-Q9-c40">
-                                <rect key="frame" x="314" y="604" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.16235113139999999" green="0.20812408630000001" blue="0.2918305397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u11-Q9-c40">
+                                <rect key="frame" x="304" y="594" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.21341663599999999" green="0.27282303569999999" blue="0.36420798300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="293-iz-PVb"/>
-                                    <constraint firstAttribute="width" constant="50" id="WdD-V1-A7S"/>
+                                    <constraint firstAttribute="height" constant="60" id="293-iz-PVb"/>
+                                    <constraint firstAttribute="width" constant="60" id="WdD-V1-A7S"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="+">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="+" image="icoPlus">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnClicked:" destination="TDm-E7-teo" eventType="touchUpInside" id="OOW-KR-OGE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS7-QA-gKW">
-                                <rect key="frame" x="68" y="297.5" width="239" height="72"/>
-                                <string key="text">MSFloating Button
-Demo</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="0.93306565279999998" green="0.73428905010000001" blue="0.034815791989999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" red="0.93306565279999998" green="0.73428905010000001" blue="0.034815791989999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoManoj" translatesAutoresizingMaskIntoConstraints="NO" id="aT9-RN-oTa">
+                                <rect key="frame" x="62.5" y="70" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="VOf-GG-HS9"/>
+                                    <constraint firstAttribute="height" constant="250" id="y4w-v0-p0w"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.16235113139999999" green="0.20812408630000001" blue="0.2918305397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82911643401015223" green="0.7486474738106913" blue="0.50724059321230819" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="u11-Q9-c40" secondAttribute="trailing" constant="-5" id="7qI-f6-JTl"/>
-                            <constraint firstItem="HS7-QA-gKW" firstAttribute="centerX" secondItem="2BJ-4s-ltM" secondAttribute="centerX" id="DPD-YY-dG7"/>
-                            <constraint firstItem="HS7-QA-gKW" firstAttribute="centerY" secondItem="2BJ-4s-ltM" secondAttribute="centerY" id="Ry7-Nj-t5G"/>
+                            <constraint firstItem="aT9-RN-oTa" firstAttribute="centerX" secondItem="2BJ-4s-ltM" secondAttribute="centerX" id="HNm-nH-2Ot"/>
                             <constraint firstItem="MR2-cl-i5P" firstAttribute="top" secondItem="u11-Q9-c40" secondAttribute="bottom" constant="13" id="bwq-L2-YVw"/>
+                            <constraint firstItem="aT9-RN-oTa" firstAttribute="top" secondItem="fRb-Md-Lcw" secondAttribute="bottom" constant="50" id="mSS-qM-6c0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnAdd" destination="u11-Q9-c40" id="wZ5-kW-HXV"/>
+                        <outlet property="logo" destination="aT9-RN-oTa" id="cK1-th-n32"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIj-nT-GAN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="282"/>
+            <point key="canvasLocation" x="44" y="281.10944527736132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icoPlus" width="712" height="720"/>
+        <image name="logoManoj" width="1024" height="1024"/>
+    </resources>
 </document>
