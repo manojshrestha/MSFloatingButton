@@ -6,7 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/MSFloatingButton.svg?style=flat)](http://cocoapods.org/pods/MSFloatingButton)
 
 ## GIF
-<img src="MSFloatingButtonDemo.gif" alt="Demo">
+![alt text](https://github.com/manojshrestha/MSFloatingButton/blob/master/MSDemo.gif)
+<img src="https://github.com/manojshrestha/MSFloatingButton/blob/master/MSDemo.gif" alt="Demo">
 
 
 ## Example
