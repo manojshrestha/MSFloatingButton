@@ -6,10 +6,10 @@
 [![Platform](https://img.shields.io/cocoapods/p/MSFloatingButton.svg?style=flat)](http://cocoapods.org/pods/MSFloatingButton)
 
 ## GIF
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/0LZW7"><a href="//imgur.com/0LZW7"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src="MSFloatingButtonDemo.gif" alt="Demo">
+
 
 ## Example
-
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
