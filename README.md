@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/MSFloatingButton.svg?style=flat)](http://cocoapods.org/pods/MSFloatingButton)
 
 ## GIF
-<a href="https://github.com/manojshrestha/MSFloatingButton/blob/master/MSDemo.gif" title="MSFloatingButtonDemoGif"/></a>
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/0LZW7"><a href="//imgur.com/0LZW7"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Example
 
