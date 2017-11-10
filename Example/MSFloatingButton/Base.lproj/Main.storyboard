@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="b41-nJ-PjX">
             <objects>
-                <viewController id="TDm-E7-teo" customClass="ViewController" customModule="MSFloatingButton1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TDm-E7-teo" customClass="ViewController" customModule="MSFloatingButton_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fRb-Md-Lcw"/>
                         <viewControllerLayoutGuide type="bottom" id="MR2-cl-i5P"/>

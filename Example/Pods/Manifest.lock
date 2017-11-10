@@ -1,7 +1,10 @@
 PODS:
-  - MSFloatingButton (0.1.0)
+  - BubbleTransition (2.0.2)
+  - MSFloatingButton (0.1.1):
+    - BubbleTransition
 
 DEPENDENCIES:
+  - BubbleTransition (~> 2.0.0)
   - MSFloatingButton (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +12,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MSFloatingButton: 6536b953242045805a1d0bd43f7e63c536e5d68b
+  BubbleTransition: 7d98ed7d56f0940e83f350a98103ad473491c769
+  MSFloatingButton: c39b7bd603606536a21545373f4c7427be4f6d31
 
-PODFILE CHECKSUM: 103efe86d2df442445c82a5a41c42722b177bf95
+PODFILE CHECKSUM: bf7d3728275b92e933293bf6022ca2beb8817f72
 
 COCOAPODS: 1.2.1

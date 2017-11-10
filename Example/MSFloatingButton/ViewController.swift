@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     
     @IBOutlet weak var btnAdd: UIButton!
+    //let transition = PopAnimator()
+
     
     let btnDictionary = [["title":"GIF","icon":"icoGif","backgroundColor":UIColor(red: 246.0/255.0, green: 219.0/255.0, blue: 74.0/255.0, alpha: 1.0)],
                          ["title":"Link","icon":"icoLink","backgroundColor":UIColor(red: 90.0/255.0, green: 187.0/255.0, blue: 139.0/255.0, alpha: 1.0)],
@@ -38,8 +40,8 @@ class ViewController: UIViewController {
     @IBAction func btnClicked(_ sender: UIButton)
     {
         let floatingCollectionVC = FloatingButtonCollectionViewController()
-        let bgColor = UIColor(red: 55.0/255.0, green: 70.0/255.0, blue: 92.0/255.0, alpha: 1.0)
-        floatingCollectionVC.view.backgroundColor = bgColor
+        floatingCollectionVC.backgroundColor = self.btnAdd.backgroundColor!//bgColor
+        floatingCollectionVC.transitionDuration = 0.2
         for i in 0...(btnDictionary.count - 1) {
             let fbtn = MSFloatingBtnWithLabel()
             fbtn.floatingButtonColor = btnDictionary[i]["backgroundColor"] as! UIColor
@@ -50,12 +52,19 @@ class ViewController: UIViewController {
             fbtn.icon = UIImage(named: btnDictionary[i]["icon"] as! String)
             floatingCollectionVC.addFloatingButton(fbtn)
         }
-        
-        
-        self.present(floatingCollectionVC, animated: true) {
-            
-        }
+
+        floatingCollectionVC.transitionButton = self.btnAdd
+        present(floatingCollectionVC, animated: true, completion: nil)
     }
     
-}
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+        } else {
+            print("Portrait")
+        }
+    }}
+
+
+
 

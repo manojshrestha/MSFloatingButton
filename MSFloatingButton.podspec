@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSFloatingButton'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Tumblr like floating button for iOS Projects.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Tumblr like floating button for iOS Projects. Mainly suitable for multiple floating button options. Shows floating buttons in another view in circular shape.
+    Tumblr like floating button for iOS Projects. Mainly suitable for multiple floating button options. Shows floating buttons in another view in circular shape.
                        DESC
 
   s.homepage         = 'https://github.com/manojshrestha/MSFloatingButton'
@@ -28,7 +28,7 @@ Tumblr like floating button for iOS Projects. Mainly suitable for multiple float
   s.source           = { :git => 'https://github.com/manojshrestha/MSFloatingButton.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'MSFloatingButton/Classes/**/*'
   
@@ -38,5 +38,6 @@ Tumblr like floating button for iOS Projects. Mainly suitable for multiple float
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'BubbleTransition', '~> 2.0.0'
+    # s.dependency 'AFNetworking', '~> 2.3'
 end

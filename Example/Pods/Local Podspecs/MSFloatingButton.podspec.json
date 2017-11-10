@@ -1,8 +1,8 @@
 {
   "name": "MSFloatingButton",
-  "version": "0.1.0",
-  "summary": "A short description of MSFloatingButton.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.1",
+  "summary": "Tumblr like floating button for iOS Projects.",
+  "description": "Tumblr like floating button for iOS Projects. Mainly suitable for multiple floating button options. Shows floating buttons in another view in circular shape.",
   "homepage": "https://github.com/manojshrestha/MSFloatingButton",
   "license": {
     "type": "MIT",
@@ -13,10 +13,16 @@
   },
   "source": {
     "git": "https://github.com/manojshrestha/MSFloatingButton.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
-  "source_files": "MSFloatingButton/Classes/**/*"
+  "source_files": "MSFloatingButton/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "BubbleTransition": [
+
+    ]
+  }
 }

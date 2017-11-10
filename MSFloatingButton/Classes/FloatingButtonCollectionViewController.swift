@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BubbleTransition
 
 public class FloatingButtonCollectionViewController: UIViewController, MSFloatingBtnWithLabelDelegate {
     
@@ -14,12 +15,30 @@ public class FloatingButtonCollectionViewController: UIViewController, MSFloatin
     fileprivate var floatingButtonCollection = [MSFloatingBtnWithLabel]()
     var floatingButtonsCollectionRadius: CGFloat = 100.0
     var floatingButtonRadius: CGFloat = 25.0
+    let transition = BubbleTransition()
+
+    public var backgroundColor : UIColor = UIColor.clear {
+        didSet {
+            self.view.backgroundColor = backgroundColor
+            self.transition.bubbleColor = backgroundColor
+        }
+    }
+    
+    public var transitionDuration : Double = 0.5 {
+        didSet {
+            self.transition.duration = transitionDuration
+        }
+    }
+    
+    
+    var transitionButton : UIButton!
     
     //MARK:- View Controller Delegate Methods
     public override func viewDidLoad() {
         super.viewDidLoad()
+        self.transitioningDelegate = self
+        self.modalPresentationStyle = .custom
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(actionClose(_:))))
-        
     }
     
     public override func viewWillAppear(_ animated: Bool) {
@@ -32,10 +51,9 @@ public class FloatingButtonCollectionViewController: UIViewController, MSFloatin
         // Dispose of any resources that can be recreated.
     }
     
-    public override func viewWillLayoutSubviews() {
+    public override func viewDidLayoutSubviews() {
         animateFloatingButtons(true) { (finish) in}
     }
-    
     
     @objc func actionClose(_ tap: UITapGestureRecognizer) {
         animateFloatingButtons(false) { (finished) in
@@ -226,5 +244,25 @@ public class FloatingButtonCollectionViewController: UIViewController, MSFloatin
         
         btnClose.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([trailingConstraint,bottomConstraint])
+    }
+}
+
+
+extension FloatingButtonCollectionViewController: UIViewControllerTransitioningDelegate
+{
+    
+    // MARK: UIViewControllerTransitioningDelegate
+   public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .present
+        transition.startingPoint = transitionButton.center
+        //transition.bubbleColor = transitionButton.backgroundColor!
+        return transition
+    }
+    
+   public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .dismiss
+        transition.startingPoint = transitionButton.center
+        //transition.bubbleColor = transitionButton.backgroundColor!
+        return transition
     }
 }

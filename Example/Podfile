@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'MSFloatingButton_Example' do
   pod 'MSFloatingButton', :path => '../'
+  pod 'BubbleTransition', '~> 2.0.0'
 
   target 'MSFloatingButton_Tests' do
     inherit! :search_paths
